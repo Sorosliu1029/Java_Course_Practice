@@ -44,7 +44,7 @@ public class FileHandler {
         String input = null;
         boolean todoFound = false;
         while((input = bufReader.readLine()) != null) {
-            if (input.contains("//todo:") || input.contains("//todo") || input.contains("todo")) {
+            if (input.contains("//todo:") || input.contains("todo")) {
                 todoFound = true;
                 System.out.println(file.getPath());
                 break;
